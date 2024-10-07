@@ -167,3 +167,34 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+.sociais li {
+    list-style: none;
+}
+#threads{
+    height: 40px;
+}
+.sociais li a{
+    display:inline-block;
+    margin: 5px 0;
+    /* altera a escala de tamanho */
+    transform: scale(0.6);
+    /* inverte a cor para branco */
+    filter: invert(1);
+}
+.sociais li a:hover{
+    color: var(--corSecundaria);
+    filter: invert(0);
+}
+
+/* circulo */
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: var(--corPrimaria);
+
+    /* tamanho --> lado --> posição */
+    clip-path: circle(600px at right 800px);
+}
